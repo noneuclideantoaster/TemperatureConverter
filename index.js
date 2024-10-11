@@ -6,7 +6,8 @@
  * @returns {number} temperature in °C
  */
 function convertToCelsius(f) {
-  // TODO
+  let celsius = (f - 32) * (5/9);
+  return celsius;
 }
 
 /**
@@ -23,8 +24,18 @@ function convertToCelsius(f) {
  * the given Fahrenheit temperature `f`
  */
 function describeTemperature(f) {
-  // TODO
-}
+  if (f <= 32) {
+    return "Colorado sweatshirt weather"; 
+  } else if (f <= 64) {
+    return "Colorado shorts weather";
+  } else if (f <= 86) {
+    return "Colorado heat stroke weather";
+  } else if (f <= 100) {
+    return "Colorado melting point";
+  } else {
+    return "Colorado burning to the ground";
+  }
+};
 
 /**
  * @param {number} limit
