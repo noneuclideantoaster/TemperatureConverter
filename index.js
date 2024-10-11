@@ -1,5 +1,6 @@
 // Complete the following functions to make our program work!
 
+
 /**
  * Converts the given Fahrenheit temperature `f` to Celsius.
  * @param {number} f temperature in °F
@@ -25,15 +26,15 @@ function convertToCelsius(f) {
  */
 function describeTemperature(f) {
   if (f <= 32) {
-    return "Colorado sweatshirt weather"; 
+    return "very cold"; 
   } else if (f <= 64) {
-    return "Colorado shorts weather";
+    return "cold";
   } else if (f <= 86) {
-    return "Colorado heat stroke weather";
+    return "warm";
   } else if (f <= 100) {
-    return "Colorado melting point";
+    return "hot";
   } else {
-    return "Colorado burning to the ground";
+    return "very hot";
   }
 };
 
@@ -41,9 +42,14 @@ function describeTemperature(f) {
  * @param {number} limit
  * @returns {number} a random integer in the range [0, `limit`)
  */
-function getRandomInt(limit) {
-  // TODO
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
+
+
+
+
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
 /**
