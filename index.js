@@ -43,14 +43,10 @@ function describeTemperature(f) {
  * @returns {number} a random integer in the range [0, `limit`)
  */
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
+function getRandomInt(limit) {
+  return Math.floor(Math.random() * limit);
 }
-
-
-
-
-
+;
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
 /**
  * Converts the given temperature from Fahrenheit to Celsius,
