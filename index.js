@@ -6,8 +6,11 @@
  * @param {number} f temperature in °F
  * @returns {number} temperature in °C
  */
+
+//KIT NOTE: This converts the temperature and rounds it based on the equation
+//table below. IT IS IMPORTANT TO PUT THOSE PARENTHESIS THERE.
 function convertToCelsius(f) {
-  let celsius = (f - 32) * (5/9);
+  let celsius = Math.round((f - 32) * (5/9));
   return celsius;
 }
 
@@ -24,6 +27,8 @@ function convertToCelsius(f) {
  * @returns {string} the description from the table above corresponding to
  * the given Fahrenheit temperature `f`
  */
+
+//This defines 'f' and tells you what message should be associated with it
 function describeTemperature(f) {
   if (f <= 32) {
     return "very cold"; 
@@ -42,6 +47,8 @@ function describeTemperature(f) {
  * @param {number} limit
  * @returns {number} a random integer in the range [0, `limit`)
  */
+
+//This gets a random number.
 
 function getRandomInt(limit) {
   return Math.floor(Math.random() * limit);
